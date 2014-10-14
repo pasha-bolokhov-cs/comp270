@@ -1,0 +1,7 @@
+total 20
+drwx------. 2 bolokhov bolokhov   76 Oct  7 23:24 .
+drwx------. 7 bolokhov bolokhov 4096 Oct  7 23:34 ..
+-rw-------. 1 bolokhov bolokhov 1203 Oct  7 23:23 authorized_keys
+-rw-------. 1 bolokhov bolokhov 1679 Oct  6 23:31 id_rsa
+-rw-------. 1 bolokhov bolokhov  401 Oct  6 23:31 id_rsa.pub
+-rw-------. 1 bolokhov bolokhov  421 Oct  6 23:34 known_hosts
