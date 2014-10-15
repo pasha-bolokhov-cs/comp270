@@ -1,0 +1,5 @@
+#
+
+# run backup at 21:32
+32 21 * * *	/home/pasha.bolokhov/comp112/assign3/backup-ssh.sh >> /home/pasha.bolokhov/comp112/assign3/backup-ssh.log
+

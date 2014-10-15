@@ -1,0 +1,27 @@
+Answers to the Questions:
+1.  Restriction of the connecting host - this is of course security
+enforcement. We've created a passphrase-less key and this certainly
+degrades security to a
+certain extent. Then, by checking the IP of the connecting ssh client,
+we are "restoring" the security. In anyway, this key has been created
+for the purpose of back up only. So we only allow what we *have* to
+allow for the backup to proceed successfully, and not anything else
+
+2. Double colon means we want to connect to rsync daemon, not remote shell
+
+3. I don't like the idea of putting the password into file either.
+Here's at least a few reasons why would be totally bad to put it onto
+the command line:
+    - any user can run "ps auxww"
+    - your command will go into .bash_history (unless you put a space
+in front of the command)
+    - you will anyway want to put the command into a file, so it will
+be sitting in a file, quite likely readable by everyone
+
+4. If a passphrase is required, it will be hard to automate this. Even
+"keychain" needs the user to input a passphrase once, and besides I
+see it very problematic to use keychain for a 'cronned' task
+
+5. Excludes - various reasons, e.g. logs, tmp dirs,
+build/crossplatform-build dirs. Even ".bak", "*~", and so on
+files left by different editors
