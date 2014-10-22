@@ -1,0 +1,9 @@
+#
+# Pasha Bolokhov
+#
+
+RewriteEngine On
+
+RewriteBase /~bolokhov
+RewriteRule ^name=?(.*) "/cgi-bin/name.cgi?$1"
+

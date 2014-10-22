@@ -11,6 +11,20 @@ File:
 File:
 	env.cgi			CGI script which prints the environment
 
+File:
+	vhost.conf		put it in /etc/httpd/conf.d/
+
+File:
+	name.cgi		This prints a sentence which contains a parameter,
+				see 'htaccess' below
+
+File:
+	htaccess		If the client requests http://204.174.60.77/~bolokhov/name=Jennifer
+                                a CGI script 'name.cgi?Jennifer' is executed and it prints
+				out a sentence with the given name (here Jennifer)
+				If just "~bolokhov/name" is given, then it says that
+				a name should have been supplied
+
 URLs that work:
 	http://vm
         http://vm/cgi-bin/env.cgi
@@ -18,6 +32,8 @@ URLs that work:
 	http://pasha2.comp/
 	https://204.174.60.77
 	https://204.174.60.77/cgi-bin/env.cgi
+        https://204.174.60.77/~bolokhov
+
 
 Nothing works from {deepblue,hal}.cs.camosun.bc.ca
 	http://204.174.60.77/index.html    -->   Forbidden
