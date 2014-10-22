@@ -1,0 +1,32 @@
+
+File:
+	mkcert.sh		script creating the key/certificate pair
+
+File:
+	olive.{crt,key}		self-signed certificate
+
+File:
+	etc-hosts-remote	/etc/hosts configuration on a remote machine
+				which enables accessing the Virtual Hosts
+File:
+	env.cgi			CGI script which prints the environment
+
+URLs that work:
+	http://vm
+        http://vm/cgi-bin/env.cgi
+	http://pasha1.comp/
+	http://pasha2.comp/
+	https://204.174.60.77
+	https://204.174.60.77/cgi-bin/env.cgi
+
+Nothing works from {deepblue,hal}.cs.camosun.bc.ca
+	http://204.174.60.77/index.html    -->   Forbidden
+
+		$ wget http://204.174.60.77/index.html
+		--2014-10-22 05:02:00--  http://204.174.60.77/index.html
+		Connecting to 204.174.60.77:80... connected.
+		HTTP request sent, awaiting response... 403 Forbidden
+		2014-10-22 05:02:00 ERROR 403: Forbidden.
+
+	(this is just to demonstrate -- in reality tested with "elinks/lynx")
+
