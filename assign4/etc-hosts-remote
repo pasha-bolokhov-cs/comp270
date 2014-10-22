@@ -1,0 +1,9 @@
+#  .....
+#
+#  Bla-bla-bla
+
+# Real and Virtual Hosts on a Apache running in the Comp270 course
+204.174.60.77	vm
+204.174.60.77	pasha1.comp
+204.174.60.77	pasha2.comp
+
