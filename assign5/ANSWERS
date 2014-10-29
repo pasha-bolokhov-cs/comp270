@@ -1,0 +1,10 @@
+
+We want to use SBL and XBL because they maintain the lists of spammers and exploited computers.
+
+PBL, on the other hand, contains ranges (i.e. not single IP addresses) of ip addresses of normal computers ("home" computers) which are not supposed to send email without using their ISP. We could still use that, but then we ourselves may be on that list. Then testing while sitting at home would be effectively blocked
+
+
+tb150-08.cs.camosun.bc.ca
+204.174.60.77
+password is in the email
+
