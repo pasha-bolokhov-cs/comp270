@@ -1,0 +1,31 @@
+
+	IP address -- 204.174.60.77
+	Root -- architect
+	You might have changed your password, I have no control of that
+
+SetUID part
+-----------
+
+C wrapper (wrapsuid.c) program is attached, but everything is stored in
+	/home/bolokhov/comp270/assign6/
+
+The binary is installed as /usr/sbin/wrapsuid
+
+The script is called "script-cat.pl"
+
+Remark: in order to package all files and attach them, I temporarily restored the
+read attribute of "test.txt" for everyone, also left "root" as the owner
+After packaging, I again changed it to rw-------
+
+
+Kill part
+---------
+
+A perl script "useless-bolokhov.pl" is attached. The name is so the file is unique.
+A couple of images of the program and of "top" running concurrently are attached
+(using "tmux" which is a better version of "screen"; both "tmux" and "ssh" use quite
+a bit of resource when the program is running)
+
+In the "top" window, I did "sigstop", "sigcont" and "sigkill" the process. Near
+same effects are done by hitting Ctrl-Z and then "bg" or "fg", or just "kill".
+
