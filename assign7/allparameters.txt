@@ -1,0 +1,414 @@
+Anteater V 0.4.5 - module overview
+==============================================================================
+
+FILTER
+------------------------------------------------------------------------------
+
+  --syslog-counter
+    Info....: Set this flag to display the linecounter.
+    Help....: This is a Flag.
+    Type....: Flag
+    Value...: 0
+
+  --syslog-year
+    Info....: Set the start year of the syslog file.
+    Help....: Year with 4 digits.
+    Type....: String
+    Value...: now
+
+  --postfix-counter
+    Info....: Set this flag to display the linecounter.
+    Help....: This is a Flag.
+    Type....: Flag
+    Value...: 0
+
+  --postfix-year
+    Info....: Set the start year of the postfix file.
+    Help....: Year with 4 digits.
+    Type....: String
+    Value...: now
+
+
+ADDRESS FILTER
+------------------------------------------------------------------------------
+
+  --lowercase-disable
+    Info....: Set to disable the lowercase filter.
+    Help....: This is a flag.
+    Type....: Flag
+    Value...: 0
+
+  --virtuser-file
+    Info....: Set a Filename and acivate this Filter.
+    Help....: Path and Filename.
+    Type....: String
+    Value...: 
+
+  --aliases-domain
+    Info....: The primary Domain of the Mailserver.
+    Help....: a valid domainname.
+    Type....: Global String
+    Value...: 
+
+  --aliases-file
+    Info....: Set the filename for the aliases file.
+    Help....: Absolute path.
+    Type....: String
+    Value...: no
+
+  --aliases-scramble
+    Info....: scramble all names for public screenshots.
+    Help....: this is a flag.
+    Type....: Flag
+    Value...: 
+
+
+ANALYSE
+------------------------------------------------------------------------------
+
+  --lt-limit
+    Info....: Limit Output to n Lines.
+    Help....: Integer from 1 to x.
+    Type....: Global String
+    Value...: 25
+
+  --lt-no-delivery
+    Info....: Statistic with not delivered mail
+    Help....: If set, not delivered mails are included.
+    Type....: Global Flag
+    Value...: 0
+
+  --lt-only-no-delivery
+    Info....: Statistic ONLY with not delivered mail
+    Help....: If set, ONLY not delivered mails are included.
+    Type....: Global Flag
+    Value...: 0
+
+  --ltd-limit
+    Info....: Limit Output to n Lines.
+    Help....: Integer from 1 to x.
+    Type....: Global String
+    Value...: 25
+
+  --ltd-no-delivery
+    Info....: Statistic with not delivered mail
+    Help....: If set, not delivered mails are included.
+    Type....: Global Flag
+    Value...: 0
+
+  --ltd-only-no-delivery
+    Info....: Statistic ONLY with not delivered mail
+    Help....: If set, ONLY not delivered mails are included.
+    Type....: Global Flag
+    Value...: 0
+
+  --xt-limit
+    Info....: Limit Output to n Lines.
+    Help....: Integer from 1 to x.
+    Type....: Global String
+    Value...: 25
+
+  --xt-no-delivery
+    Info....: Statistic with not delivered mail
+    Help....: If set, not delivered mails are included.
+    Type....: Global Flag
+    Value...: 0
+
+  --xt-only-no-delivery
+    Info....: Statistic ONLY with not delivered mail
+    Help....: If set, ONLY not delivered mails are included.
+    Type....: Global Flag
+    Value...: 0
+
+  --mt-limit
+    Info....: Limit Output to n Lines.
+    Help....: Integer from 1 to x.
+    Type....: Global String
+    Value...: 25
+
+  --mt-no-delivery
+    Info....: Statistic with not delivered mail
+    Help....: If set, not delivered mails are included.
+    Type....: Global Flag
+    Value...: 0
+
+  --mt-only-no-delivery
+    Info....: Statistic ONLY with not delivered mail
+    Help....: If set, ONLY not delivered mails are included.
+    Type....: Global Flag
+    Value...: 0
+
+  --mf-limit
+    Info....: Limit Output to n Lines.
+    Help....: Integer from 1 to x.
+    Type....: Global String
+    Value...: 25
+
+  --mf-limit-to
+    Info....: Maximum recipients shown.
+    Help....: Integer from 1 to x.
+    Type....: String
+    Value...: 5
+
+  --mf-no-delivery
+    Info....: Statistic with not delivered mail
+    Help....: If set, not delivered mails are included.
+    Type....: Global Flag
+    Value...: 0
+
+  --mf-only-no-delivery
+    Info....: Statistic ONLY with not delivered mail
+    Help....: If set, ONLY not delivered mails are included.
+    Type....: Global Flag
+    Value...: 0
+
+  --mfip-limit
+    Info....: Limit Output to n Lines.
+    Help....: Integer from 1 to x.
+    Type....: Global String
+    Value...: 25
+
+  --bm-limit
+    Info....: Limit Output to n Lines.
+    Help....: Integer from 1 to x.
+    Type....: Global String
+    Value...: 25
+
+  --bm-limit-to
+    Info....: Maximum recipients shown.
+    Help....: Integer from 1 to x.
+    Type....: String
+    Value...: 5
+
+  --bm-no-delivery
+    Info....: Statistic with not delivered mail
+    Help....: If set, not delivered mails are included.
+    Type....: Global Flag
+    Value...: 0
+
+  --bm-only-no-delivery
+    Info....: Statistic ONLY with not delivered mail
+    Help....: If set, ONLY not delivered mails are included.
+    Type....: Global Flag
+    Value...: 0
+
+  --mr-limit
+    Info....: Limit Output to n Lines.
+    Help....: Integer from 1 to x.
+    Type....: Global String
+    Value...: 25
+
+  --mr-no-delivery
+    Info....: Statistic with not delivered mail
+    Help....: If set, not delivered mails are included.
+    Type....: Global Flag
+    Value...: 0
+
+  --mr-only-no-delivery
+    Info....: Statistic ONLY with not delivered mail
+    Help....: If set, ONLY not delivered mails are included.
+    Type....: Global Flag
+    Value...: 0
+
+
+REPORT
+------------------------------------------------------------------------------
+
+  --ascii-dateformat
+    Info....: Change the default dateformat.
+    Help....: 3-5 letters from "dmy-/.".
+    Type....: Global String
+    Value...: 
+
+  --ascii-width
+    Info....: Set a new screen width for the ascii output.
+    Help....: Integer between 79 and 500.
+    Type....: String
+    Value...: 79
+
+  --html-dateformat
+    Info....: Change the default dateformat.
+    Help....: 3-5 letters from "dmy-/.".
+    Type....: Global String
+    Value...: 
+
+  --html-disable-hr
+    Info....: Disable the -hr- tag after every report
+    Help....: This is a flag.
+    Type....: Flag
+    Value...: 
+
+  --html-footer-file
+    Info....: Use a custom file as footer for the output
+    Help....: The full path to the file
+    Type....: String
+    Value...: 
+
+  --html-header-file
+    Info....: Use a custom file as header for the output
+    Help....: The full path to the file
+    Type....: String
+    Value...: 
+
+  --html-tableborder
+    Info....: Set the size of the Tableborder
+    Help....: Size equal or greater 0.
+    Type....: Integer
+    Value...: 0
+
+
+PLUGIN
+------------------------------------------------------------------------------
+
+  --filter-disable
+    Info....: Disable all addressfilters.
+    Help....: This is a flag.
+    Type....: Flag
+    Value...: 0
+
+  --filter-file
+    Info....: Read this file, instead from stdin.
+    Help....: Path of the file.
+    Type....: String
+    Value...: 
+
+  --filter-postfix
+    Info....: Switch to this filter.
+    Help....: This is a flag.
+    Type....: Flag
+    Value...: 0
+
+  --filter-syslog
+    Info....: Switch to this filter.
+    Help....: This is a flag.
+    Type....: Flag
+    Value...: 0
+
+  --analyse-all
+    Info....: Enable all analysis.
+    Help....: This is a flag.
+    Type....: Flag
+    Value...: 0
+
+  --analyse-bm
+    Info....: Enable this analyse.
+    Help....: This is a flag.
+    Type....: Flag
+    Value...: 0
+
+  --analyse-lt
+    Info....: Enable this analyse.
+    Help....: This is a flag.
+    Type....: Flag
+    Value...: 0
+
+  --analyse-ltd
+    Info....: Enable this analyse.
+    Help....: This is a flag.
+    Type....: Flag
+    Value...: 0
+
+  --analyse-mf
+    Info....: Enable this analyse.
+    Help....: This is a flag.
+    Type....: Flag
+    Value...: 0
+
+  --analyse-mfip
+    Info....: Enable this analyse.
+    Help....: This is a flag.
+    Type....: Flag
+    Value...: 0
+
+  --analyse-mr
+    Info....: Enable this analyse.
+    Help....: This is a flag.
+    Type....: Flag
+    Value...: 0
+
+  --analyse-mt
+    Info....: Enable this analyse.
+    Help....: This is a flag.
+    Type....: Flag
+    Value...: 0
+
+  --analyse-xt
+    Info....: Enable this analyse.
+    Help....: This is a flag.
+    Type....: Flag
+    Value...: 0
+
+  --report-ascii
+    Info....: Select this report.
+    Help....: This is a flag.
+    Type....: Flag
+    Value...: 0
+
+  --report-ascii-file
+    Info....: Write all output from this report to this file.
+    Help....: Path and Filename.
+    Type....: String
+    Value...: 
+
+  --report-bm
+    Info....: Change the Report for this Analyse only.
+    Help....: Select the Report.
+    Type....: String
+    Value...: 
+
+  --report-html
+    Info....: Select this report.
+    Help....: This is a flag.
+    Type....: Flag
+    Value...: 0
+
+  --report-html-file
+    Info....: Write all output from this report to this file.
+    Help....: Path and Filename.
+    Type....: String
+    Value...: 
+
+  --report-lt
+    Info....: Change the Report for this Analyse only.
+    Help....: Select the Report.
+    Type....: String
+    Value...: 
+
+  --report-ltd
+    Info....: Change the Report for this Analyse only.
+    Help....: Select the Report.
+    Type....: String
+    Value...: 
+
+  --report-mf
+    Info....: Change the Report for this Analyse only.
+    Help....: Select the Report.
+    Type....: String
+    Value...: 
+
+  --report-mfip
+    Info....: Change the Report for this Analyse only.
+    Help....: Select the Report.
+    Type....: String
+    Value...: 
+
+  --report-mr
+    Info....: Change the Report for this Analyse only.
+    Help....: Select the Report.
+    Type....: String
+    Value...: 
+
+  --report-mt
+    Info....: Change the Report for this Analyse only.
+    Help....: Select the Report.
+    Type....: String
+    Value...: 
+
+  --report-xt
+    Info....: Change the Report for this Analyse only.
+    Help....: Select the Report.
+    Type....: String
+    Value...: 
+
+
+==============================================================================

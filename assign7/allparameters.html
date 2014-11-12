@@ -1,0 +1,209 @@
+<html>
+<head>
+  <title>Anteater V0.4.5 - module overview</title>
+</head>
+<body>
+<h1>Anteater V0.4.5 - module overview</h1>
+<ul>
+  <li>Filter</li>
+  <ul compact>
+    <li>syslog</li>
+    <ul compact>
+      <li><dl compact><dt>counter</dt><dd><dl compact><dt>Info:</dt><dd>"Set this flag to display the linecounter."</dd><dt>Help:</dt><dd>"This is a Flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>year</dt><dd><dl compact><dt>Info:</dt><dd>"Set the start year of the syslog file."</dd><dt>Help:</dt><dd>"Year with 4 digits."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>"now"</dd></dl></dd></dl></li>
+    </ul>
+    <li>postfix</li>
+    <ul compact>
+      <li><dl compact><dt>counter</dt><dd><dl compact><dt>Info:</dt><dd>"Set this flag to display the linecounter."</dd><dt>Help:</dt><dd>"This is a Flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>year</dt><dd><dl compact><dt>Info:</dt><dd>"Set the start year of the postfix file."</dd><dt>Help:</dt><dd>"Year with 4 digits."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>"now"</dd></dl></dd></dl></li>
+    </ul>
+  </ul>
+  <li>Address Filter</li>
+  <ul compact>
+    <li>lowercase</li>
+    <ul compact>
+      <li><dl compact><dt>disable</dt><dd><dl compact><dt>Info:</dt><dd>"Set to disable the lowercase filter."</dd><dt>Help:</dt><dd>"This is a flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+    </ul>
+    <li>virtuser</li>
+    <ul compact>
+      <li><dl compact><dt>file</dt><dd><dl compact><dt>Info:</dt><dd>"Set a Filename and acivate this Filter."</dd><dt>Help:</dt><dd>"Path and Filename."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+    </ul>
+    <li>aliases</li>
+    <ul compact>
+      <li><dl compact><dt>domain</dt><dd><dl compact><dt>Info:</dt><dd>"The primary Domain of the Mailserver."</dd><dt>Help:</dt><dd>"a valid domainname."</dd><dt>Type:</dt><dd>Global String
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+      <li><dl compact><dt>file</dt><dd><dl compact><dt>Info:</dt><dd>"Set the filename for the aliases file."</dd><dt>Help:</dt><dd>"Absolute path."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>"no"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>scramble</dt><dd><dl compact><dt>Info:</dt><dd>"scramble all names for public screenshots."</dd><dt>Help:</dt><dd>"this is a flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+    </ul>
+  </ul>
+  <li>Analyse</li>
+  <ul compact>
+    <li>lt</li>
+    <ul compact>
+      <li><dl compact><dt>limit</dt><dd><dl compact><dt>Info:</dt><dd>"Limit Output to n Lines."</dd><dt>Help:</dt><dd>"Integer from 1 to x."</dd><dt>Type:</dt><dd>Global String
+</dd><dt>Value:</dt><dd>"25"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>no-delivery</dt><dd><dl compact><dt>Info:</dt><dd>"Statistic with not delivered mail"</dd><dt>Help:</dt><dd>"If set, not delivered mails are included."</dd><dt>Type:</dt><dd>Global Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>only-no-delivery</dt><dd><dl compact><dt>Info:</dt><dd>"Statistic ONLY with not delivered mail"</dd><dt>Help:</dt><dd>"If set, ONLY not delivered mails are included."</dd><dt>Type:</dt><dd>Global Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+    </ul>
+    <li>ltd</li>
+    <ul compact>
+      <li><dl compact><dt>limit</dt><dd><dl compact><dt>Info:</dt><dd>"Limit Output to n Lines."</dd><dt>Help:</dt><dd>"Integer from 1 to x."</dd><dt>Type:</dt><dd>Global String
+</dd><dt>Value:</dt><dd>"25"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>no-delivery</dt><dd><dl compact><dt>Info:</dt><dd>"Statistic with not delivered mail"</dd><dt>Help:</dt><dd>"If set, not delivered mails are included."</dd><dt>Type:</dt><dd>Global Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>only-no-delivery</dt><dd><dl compact><dt>Info:</dt><dd>"Statistic ONLY with not delivered mail"</dd><dt>Help:</dt><dd>"If set, ONLY not delivered mails are included."</dd><dt>Type:</dt><dd>Global Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+    </ul>
+    <li>xt</li>
+    <ul compact>
+      <li><dl compact><dt>limit</dt><dd><dl compact><dt>Info:</dt><dd>"Limit Output to n Lines."</dd><dt>Help:</dt><dd>"Integer from 1 to x."</dd><dt>Type:</dt><dd>Global String
+</dd><dt>Value:</dt><dd>"25"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>no-delivery</dt><dd><dl compact><dt>Info:</dt><dd>"Statistic with not delivered mail"</dd><dt>Help:</dt><dd>"If set, not delivered mails are included."</dd><dt>Type:</dt><dd>Global Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>only-no-delivery</dt><dd><dl compact><dt>Info:</dt><dd>"Statistic ONLY with not delivered mail"</dd><dt>Help:</dt><dd>"If set, ONLY not delivered mails are included."</dd><dt>Type:</dt><dd>Global Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+    </ul>
+    <li>mt</li>
+    <ul compact>
+      <li><dl compact><dt>limit</dt><dd><dl compact><dt>Info:</dt><dd>"Limit Output to n Lines."</dd><dt>Help:</dt><dd>"Integer from 1 to x."</dd><dt>Type:</dt><dd>Global String
+</dd><dt>Value:</dt><dd>"25"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>no-delivery</dt><dd><dl compact><dt>Info:</dt><dd>"Statistic with not delivered mail"</dd><dt>Help:</dt><dd>"If set, not delivered mails are included."</dd><dt>Type:</dt><dd>Global Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>only-no-delivery</dt><dd><dl compact><dt>Info:</dt><dd>"Statistic ONLY with not delivered mail"</dd><dt>Help:</dt><dd>"If set, ONLY not delivered mails are included."</dd><dt>Type:</dt><dd>Global Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+    </ul>
+    <li>mf</li>
+    <ul compact>
+      <li><dl compact><dt>limit</dt><dd><dl compact><dt>Info:</dt><dd>"Limit Output to n Lines."</dd><dt>Help:</dt><dd>"Integer from 1 to x."</dd><dt>Type:</dt><dd>Global String
+</dd><dt>Value:</dt><dd>"25"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>limit-to</dt><dd><dl compact><dt>Info:</dt><dd>"Maximum recipients shown."</dd><dt>Help:</dt><dd>"Integer from 1 to x."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>"5"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>no-delivery</dt><dd><dl compact><dt>Info:</dt><dd>"Statistic with not delivered mail"</dd><dt>Help:</dt><dd>"If set, not delivered mails are included."</dd><dt>Type:</dt><dd>Global Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>only-no-delivery</dt><dd><dl compact><dt>Info:</dt><dd>"Statistic ONLY with not delivered mail"</dd><dt>Help:</dt><dd>"If set, ONLY not delivered mails are included."</dd><dt>Type:</dt><dd>Global Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+    </ul>
+    <li>mfip</li>
+    <ul compact>
+      <li><dl compact><dt>limit</dt><dd><dl compact><dt>Info:</dt><dd>"Limit Output to n Lines."</dd><dt>Help:</dt><dd>"Integer from 1 to x."</dd><dt>Type:</dt><dd>Global String
+</dd><dt>Value:</dt><dd>"25"</dd></dl></dd></dl></li>
+    </ul>
+    <li>bm</li>
+    <ul compact>
+      <li><dl compact><dt>limit</dt><dd><dl compact><dt>Info:</dt><dd>"Limit Output to n Lines."</dd><dt>Help:</dt><dd>"Integer from 1 to x."</dd><dt>Type:</dt><dd>Global String
+</dd><dt>Value:</dt><dd>"25"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>limit-to</dt><dd><dl compact><dt>Info:</dt><dd>"Maximum recipients shown."</dd><dt>Help:</dt><dd>"Integer from 1 to x."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>"5"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>no-delivery</dt><dd><dl compact><dt>Info:</dt><dd>"Statistic with not delivered mail"</dd><dt>Help:</dt><dd>"If set, not delivered mails are included."</dd><dt>Type:</dt><dd>Global Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>only-no-delivery</dt><dd><dl compact><dt>Info:</dt><dd>"Statistic ONLY with not delivered mail"</dd><dt>Help:</dt><dd>"If set, ONLY not delivered mails are included."</dd><dt>Type:</dt><dd>Global Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+    </ul>
+    <li>mr</li>
+    <ul compact>
+      <li><dl compact><dt>limit</dt><dd><dl compact><dt>Info:</dt><dd>"Limit Output to n Lines."</dd><dt>Help:</dt><dd>"Integer from 1 to x."</dd><dt>Type:</dt><dd>Global String
+</dd><dt>Value:</dt><dd>"25"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>no-delivery</dt><dd><dl compact><dt>Info:</dt><dd>"Statistic with not delivered mail"</dd><dt>Help:</dt><dd>"If set, not delivered mails are included."</dd><dt>Type:</dt><dd>Global Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>only-no-delivery</dt><dd><dl compact><dt>Info:</dt><dd>"Statistic ONLY with not delivered mail"</dd><dt>Help:</dt><dd>"If set, ONLY not delivered mails are included."</dd><dt>Type:</dt><dd>Global Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+    </ul>
+  </ul>
+  <li>Report</li>
+  <ul compact>
+    <li>ascii</li>
+    <ul compact>
+      <li><dl compact><dt>dateformat</dt><dd><dl compact><dt>Info:</dt><dd>"Change the default dateformat."</dd><dt>Help:</dt><dd>"3-5 letters from "dmy-/."."</dd><dt>Type:</dt><dd>Global String
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+      <li><dl compact><dt>width</dt><dd><dl compact><dt>Info:</dt><dd>"Set a new screen width for the ascii output."</dd><dt>Help:</dt><dd>"Integer between 79 and 500."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>"79"</dd></dl></dd></dl></li>
+    </ul>
+    <li>html</li>
+    <ul compact>
+      <li><dl compact><dt>dateformat</dt><dd><dl compact><dt>Info:</dt><dd>"Change the default dateformat."</dd><dt>Help:</dt><dd>"3-5 letters from "dmy-/."."</dd><dt>Type:</dt><dd>Global String
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+      <li><dl compact><dt>disable-hr</dt><dd><dl compact><dt>Info:</dt><dd>"Disable the -hr- tag after every report"</dd><dt>Help:</dt><dd>"This is a flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+      <li><dl compact><dt>footer-file</dt><dd><dl compact><dt>Info:</dt><dd>"Use a custom file as footer for the output"</dd><dt>Help:</dt><dd>"The full path to the file"</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+      <li><dl compact><dt>header-file</dt><dd><dl compact><dt>Info:</dt><dd>"Use a custom file as header for the output"</dd><dt>Help:</dt><dd>"The full path to the file"</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+      <li><dl compact><dt>tableborder</dt><dd><dl compact><dt>Info:</dt><dd>"Set the size of the Tableborder"</dd><dt>Help:</dt><dd>"Size equal or greater 0."</dd><dt>Type:</dt><dd>Integer
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+    </ul>
+  </ul>
+  <li>Plugin</li>
+  <ul compact>
+    <li>filter</li>
+    <ul compact>
+      <li><dl compact><dt>disable</dt><dd><dl compact><dt>Info:</dt><dd>"Disable all addressfilters."</dd><dt>Help:</dt><dd>"This is a flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>file</dt><dd><dl compact><dt>Info:</dt><dd>"Read this file, instead from stdin."</dd><dt>Help:</dt><dd>"Path of the file."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+      <li><dl compact><dt>postfix</dt><dd><dl compact><dt>Info:</dt><dd>"Switch to this filter."</dd><dt>Help:</dt><dd>"This is a flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>syslog</dt><dd><dl compact><dt>Info:</dt><dd>"Switch to this filter."</dd><dt>Help:</dt><dd>"This is a flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+    </ul>
+    <li>analyse</li>
+    <ul compact>
+      <li><dl compact><dt>all</dt><dd><dl compact><dt>Info:</dt><dd>"Enable all analysis."</dd><dt>Help:</dt><dd>"This is a flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>bm</dt><dd><dl compact><dt>Info:</dt><dd>"Enable this analyse."</dd><dt>Help:</dt><dd>"This is a flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>lt</dt><dd><dl compact><dt>Info:</dt><dd>"Enable this analyse."</dd><dt>Help:</dt><dd>"This is a flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>ltd</dt><dd><dl compact><dt>Info:</dt><dd>"Enable this analyse."</dd><dt>Help:</dt><dd>"This is a flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>mf</dt><dd><dl compact><dt>Info:</dt><dd>"Enable this analyse."</dd><dt>Help:</dt><dd>"This is a flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>mfip</dt><dd><dl compact><dt>Info:</dt><dd>"Enable this analyse."</dd><dt>Help:</dt><dd>"This is a flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>mr</dt><dd><dl compact><dt>Info:</dt><dd>"Enable this analyse."</dd><dt>Help:</dt><dd>"This is a flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>mt</dt><dd><dl compact><dt>Info:</dt><dd>"Enable this analyse."</dd><dt>Help:</dt><dd>"This is a flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>xt</dt><dd><dl compact><dt>Info:</dt><dd>"Enable this analyse."</dd><dt>Help:</dt><dd>"This is a flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+    </ul>
+    <li>report</li>
+    <ul compact>
+      <li><dl compact><dt>ascii</dt><dd><dl compact><dt>Info:</dt><dd>"Select this report."</dd><dt>Help:</dt><dd>"This is a flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>ascii-file</dt><dd><dl compact><dt>Info:</dt><dd>"Write all output from this report to this file."</dd><dt>Help:</dt><dd>"Path and Filename."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+      <li><dl compact><dt>bm</dt><dd><dl compact><dt>Info:</dt><dd>"Change the Report for this Analyse only."</dd><dt>Help:</dt><dd>"Select the Report."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+      <li><dl compact><dt>html</dt><dd><dl compact><dt>Info:</dt><dd>"Select this report."</dd><dt>Help:</dt><dd>"This is a flag."</dd><dt>Type:</dt><dd>Flag
+</dd><dt>Value:</dt><dd>"0"</dd></dl></dd></dl></li>
+      <li><dl compact><dt>html-file</dt><dd><dl compact><dt>Info:</dt><dd>"Write all output from this report to this file."</dd><dt>Help:</dt><dd>"Path and Filename."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+      <li><dl compact><dt>lt</dt><dd><dl compact><dt>Info:</dt><dd>"Change the Report for this Analyse only."</dd><dt>Help:</dt><dd>"Select the Report."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+      <li><dl compact><dt>ltd</dt><dd><dl compact><dt>Info:</dt><dd>"Change the Report for this Analyse only."</dd><dt>Help:</dt><dd>"Select the Report."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+      <li><dl compact><dt>mf</dt><dd><dl compact><dt>Info:</dt><dd>"Change the Report for this Analyse only."</dd><dt>Help:</dt><dd>"Select the Report."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+      <li><dl compact><dt>mfip</dt><dd><dl compact><dt>Info:</dt><dd>"Change the Report for this Analyse only."</dd><dt>Help:</dt><dd>"Select the Report."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+      <li><dl compact><dt>mr</dt><dd><dl compact><dt>Info:</dt><dd>"Change the Report for this Analyse only."</dd><dt>Help:</dt><dd>"Select the Report."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+      <li><dl compact><dt>mt</dt><dd><dl compact><dt>Info:</dt><dd>"Change the Report for this Analyse only."</dd><dt>Help:</dt><dd>"Select the Report."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+      <li><dl compact><dt>xt</dt><dd><dl compact><dt>Info:</dt><dd>"Change the Report for this Analyse only."</dd><dt>Help:</dt><dd>"Select the Report."</dd><dt>Type:</dt><dd>String
+</dd><dt>Value:</dt><dd>""</dd></dl></dd></dl></li>
+    </ul>
+  </ul>
+</ul>
+</body>
+</html>

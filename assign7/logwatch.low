@@ -1,0 +1,54 @@
+ 
+ ################### Logwatch 7.4.0 (03/01/11) #################### 
+        Processing Initiated: Tue Nov 11 18:15:58 2014
+        Date Range Processed: yesterday
+                              ( 2014-Nov-10 )
+                              Period is day.
+        Detail Level of Output: 0
+        Type of Output/Format: stdout / text
+        Logfiles for Host: comp270-46
+ ################################################################## 
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ Illegal users from:
+    undef: 4 times
+    91.220.131.33: 2 times
+    115.230.127.174: 1 time
+    122.225.109.102: 1 time
+    122.225.109.197: 1 time
+ 
+ Login attempted when not in AllowUsers list:
+    root : 46 Time(s)
+ 
+ Users logging in through sshd:
+    bolokhov:
+       24.244.23.241: 1 time
+       172.21.89.171: 1 time
+       204.174.60.16 (deepblue.cs.camosun.bc.ca): 1 time
+       204.174.60.76 (tb150-07.cs.camosun.bc.ca): 1 time
+ 
+ 
+ Received disconnect:
+    11: Normal Shutdown, Thank you for playing [preauth] : 1 Time(s)
+    11: PECL/ssh2 (http://pecl.php.net/packages/ssh2) [preauth] : 2 Time(s)
+    11: disconnected by user : 2 Time(s)
+ 
+ **Unmatched Entries**
+ fatal: Write failed: Connection reset by peer [preauth] : 1 time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/sda2       7.1G  2.5G  4.6G  36% /
+ devtmpfs        492M     0  492M   0% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+

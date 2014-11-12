@@ -1,0 +1,31 @@
+
+
+This is the assignment report
+
+
+1.  Analog report URL http://204.174.60.77/~bolokhov/analogReport.html
+
+
+2.  Difference between "logwatch --detail high/low"
+    Obviously "logwatch --detail high" has a more detail
+    
+    In particular, it has reports about "Cron" and "pam_unix", which
+    "logwatch --detail low" misses
+    
+    The only two sections that they both have are "SSHD" and "Disk Space"
+    The only difference between detail high/low is in SSHD reports
+    The high detail report provides the usernames for each illegal
+    login attempt, while low detail just shows the IP address if it was known
+    
+    The high detail also provides the IP addresses for each "Received disconnect"
+    while low detail misses them
+
+
+3.  Anteater report URL http://204.174.60.77/~bolokhov/anteater_report.html
+    Anteater commands http://204.174.60.77/~bolokhov/allparameters.html
+
+    I actually used an older log file (/var/log/maillog-20141103) to produce 
+    a more meaningful output
+
+    I installed 'anteater' into /usr/local/bin, it's not in root's default PATH
+
