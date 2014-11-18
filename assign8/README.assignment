@@ -1,0 +1,16 @@
+
+
+1.  The URL to the (borrowed) PHP script:
+
+http://204.174.60.77/~bolokhov/showcountry.php?Togo
+
+
+2.  the URL for the "myAdmin" system:
+
+http://204.174.60.77/phpmyadmin/index.php
+
+user: bolokhov
+passwd: "it walks like a duck"
+
+3.  Database dump: see "db270.dump" file
+
