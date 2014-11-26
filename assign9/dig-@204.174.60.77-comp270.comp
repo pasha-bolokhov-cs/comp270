@@ -1,0 +1,29 @@
+
+; <<>> DiG 9.9.4-RedHat-9.9.4-14.el7 <<>> @204.174.60.77 comp270.comp
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 1411
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 3
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;comp270.comp.			IN	A
+
+;; ANSWER SECTION:
+comp270.comp.		3600	IN	A	204.174.60.77
+
+;; AUTHORITY SECTION:
+comp270.comp.		3600	IN	NS	localhost.
+
+;; ADDITIONAL SECTION:
+localhost.		86400	IN	A	127.0.0.1
+localhost.		86400	IN	AAAA	::1
+
+;; Query time: 0 msec
+;; SERVER: 204.174.60.77#53(204.174.60.77)
+;; WHEN: Wed Nov 26 00:00:57 PST 2014
+;; MSG SIZE  rcvd: 124
+

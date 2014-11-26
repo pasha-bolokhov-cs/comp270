@@ -1,0 +1,12 @@
+$ttl 3600
+comp270.comp.		IN	SOA	ns.comp270.comp. hostmaster.comp270.comp. (
+					 		2014112500 ; sn = serial number
+							172800     ; ref = refresh = 2d
+							900        ; ret = update retry = 15m
+							1209600    ; ex = expiry = 2w
+							3600       ; nx = nxdomain ttl = 1h
+							)
+comp270.comp.		IN	NS	localhost.
+comp270.comp.		IN	A	204.174.60.77
+selia.comp270.comp.	IN	A	206.87.176.229
+deepblue.comp270.comp.	IN	A	204.174.60.16

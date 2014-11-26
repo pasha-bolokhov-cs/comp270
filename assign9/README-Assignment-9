@@ -1,0 +1,38 @@
+
+
+Description of attached files:
+
+named.conf     -  	config
+comp270.hosts  -	domain
+upgrade.hosts  -	another domain
+
+IP address: 204.174.60.77
+
+
+1.  Now, an important problem:
+
+    $ dig @204.174.60.77 selia.comp270.comp
+
+returns a "REFUSED" error (this is also logged in '/var/log/messages' on the server) if executed remotely.
+An example record from 'messages' of a similar request:
+
+Nov 25 23:53:38 comp270-46 named[20783]: client 204.174.60.16#58573 (comp270.comp): query 'comp270.comp/A/IN' denied
+
+I found discussion about this by Victoria, but her message was unanswered. Looks like she switched to 'nslookup', which I don't normally use
+
+I executed those digs and host from deepblue as well as from other places
+
+===========> I already was going to submit the assignment with this thing left as it is, when I discovered that the "allow-query" option in "named.conf" was the cause (not the recursion restriction). 
+
+
+2.  There are a few sample 'dig' output files:
+
+    for example "dig-@204.174.60.77-station.upgrade.comp", as well as the CNN example
+
+    I suggest doing these command to test the server:
+
+$ dig @204.174.60.77 deepblue.comp270.comp
+$ dig @204.174.60.77 selia.comp270.comp
+$ dig @204.174.60.77 station.upgrade.comp
+$ dig @204.174.60.77 printers.upgrade.comp
+

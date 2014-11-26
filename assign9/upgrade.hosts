@@ -1,0 +1,13 @@
+$ttl 3600
+upgrade.comp.		IN	SOA	ns.upgrade.comp. hostmaster.upgrade.comp. (
+					 		2014112500 ; sn = serial number
+							172800     ; ref = refresh = 2d
+							900        ; ret = update retry = 15m
+							1209600    ; ex = expiry = 2w
+							3600       ; nx = nxdomain ttl = 1h
+							)
+upgrade.comp.		IN	NS	localhost.
+upgrade.comp.		IN	A	204.174.60.77
+station.upgrade.comp.	IN	A	204.174.60.77
+printers.upgrade.comp.	IN	A	204.174.60.77
+
