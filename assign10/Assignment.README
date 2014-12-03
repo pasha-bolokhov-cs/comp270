@@ -1,0 +1,9 @@
+"partition.output"	-	I tried to learn to used "parted" to create a partition.
+				Although I didn't use it for this assignment, the useful thing is that
+				you can give it commands right on the command line and not going into the CLI
+
+				Output of all relevant commands (e.g. 'mkfs') is given in this file
+
+
+"swap.output"		-	This one is pretty straightforward
+
