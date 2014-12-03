@@ -1,0 +1,24 @@
+<comp270-46 ~># free -m
+             total       used       free     shared    buffers     cached
+Mem:           994        391        602         50          0         44
+-/+ buffers/cache:        347        647
+Swap:         1999         22       1977
+<comp270-46 ~># dd if=/dev/zero of=new_swap bs=1024 count=655360
+655360+0 records in
+655360+0 records out
+671088640 bytes (671 MB) copied, 20.2671 s, 33.1 MB/s
+<comp270-46 ~># mkswap new_swap 
+Setting up swapspace version 1, size = 655356 KiB
+no label, UUID=c93773d9-1148-43e4-81e8-92c770d4123a
+<comp270-46 ~># swapon new_swap
+swapon: /root/new_swap: insecure permissions 0644, 0600 suggested.
+<comp270-46 ~># chmod 600 new_swap
+<comp270-46 ~># swapon
+NAME           TYPE      SIZE  USED PRIO
+/dev/sda1      partition   2G 29.1M   -1
+/root/new_swap file      640M    0B   -2
+<comp270-46 ~># free -m
+             total       used       free     shared    buffers     cached
+Mem:           994        918         76         50          0        567
+-/+ buffers/cache:        350        643
+Swap:         2639         29       2610
