@@ -1,0 +1,18 @@
+
+1. Save '/etc/mail/access' to '/etc/mail/access-dec-04-2014'
+
+2. Append the forbidden network to '/etc/mail/access':
+Connect:localhost.localdomain           RELAY
+Connect:localhost                       RELAY
+Connect:127.0.0.1                       RELAY
+
+Connect:204.174.60.16                   RELAY
+Connect:204.174.26.0/24                 REJECT
+
+
+(note that networks 204.174.60/24 and 204.174.26/24 do not intersect)
+
+3. Run '/etc/mail/make'
+
+4. Run 'systemctl restart sendmail.service'
+

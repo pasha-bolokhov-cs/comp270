@@ -1,0 +1,15 @@
+
+(assuming that "finding all the unique IP addresses listed" means just finding the IP addresses, 
+and only printing one if they are repeated)
+
+Run the following command:
+    $ cat illegal.txt | sed 's/^.* from \([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)$/\1/' | sort | uniq
+    121.17.174.5
+    201.134.103.165
+    60.216.12.25
+    60.217.224.242
+    92.48.122.209
+
+    (if we just used 's/^.* from //' there might have been a user named "from" which would have
+     cut the omitted portion prematurely)
+

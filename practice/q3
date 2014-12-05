@@ -1,0 +1,82 @@
+
+1. Save '/etc/named.conf':  
+
+    $ cp -a named.conf named.conf-dec-04-2014
+
+2. Add the following section to '/etc/named.conf':
+
+    zone "stuffandnonsense.nett" {
+            type master;
+            file "stuff.hosts";
+    };
+
+3. Create '/var/named/stuff.hosts':
+    
+    $ttl 3600
+    stuffandnonsense.nett.          IN      SOA     ns.stuffandnonsense.nett. hostmaster.stuffandnonsense.nett. (
+                                                            2014120400 ; sn = serial number
+                                                            172800     ; ref = refresh = 2d
+                                                            900        ; ret = update retry = 15m
+                                                            1209600    ; ex = expiry = 2w
+                                                            3600       ; nx = nxdomain ttl = 1h
+                                                            )
+    stuffandnonsense.nett.          IN      NS      localhost.
+    stuffandnonsense.nett.          IN      A       204.174.60.77
+    deepblue.stuffandnonsense.nett. IN      A       204.174.60.16
+
+    (deepblue just for fun)
+
+    We're hosting the domain, so it's our IP
+
+4. Restart 'named':
+
+   $ systemctl restart named.service
+
+5. Ensure 'dig' gives an answer (from 'deepblue')
+
+   $ dig @204.174.60.77 stuffandnonsense.nett
+
+   (output omitted)
+
+6. Spare '/etc/httpd/conf.d/vhost.conf':
+   
+   $ cp -a vhost.conf vhost.conf-dec-04-2014
+
+7. Add the following section:
+
+    <VirtualHost *:80>
+      ServerAdmin pasha@example.com
+      DocumentRoot /var/www/html/stuff
+      ServerName stuffandnonsense.nett
+      ErrorLog logs/stuff_error.log
+      CustomLog logs/stuff_access.log common
+    </VirtualHost>
+
+8. Create directory '/var/www/html/stuff'
+   (chown it to 'bolokhov.bolokhov' just for ease)
+
+
+9. Create 'index.html'
+    <html>
+      <body>
+        <h2>This is stuff and nonsense!</h2>
+      </body>
+    </html>
+
+10. Restart
+
+    $ systemctl restart httpd.service
+
+11. To test from the VM itself, added '127.0.0.1 stuffandnonsense.nett' 
+    to '/etc/hosts' and run 
+    $ lynx stuffandnonsense.nett
+    (test ok)
+
+12. Attachments to this question:
+    'index.html':    given in item '9' above
+    contents of '/var/www/html/stuff':
+        [root@comp270-46 stuff]# ls -l /var/www/html/stuff
+        total 4
+        -rw-r--r--. 1 bolokhov bolokhov 75 Dec  4 09:42 index.html
+        [root@comp270-46 stuff]# 
+

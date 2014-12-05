@@ -1,0 +1,6 @@
+
+Had to create a readable copy of /etc/ssh/sshd_config in a local directory temporarily,
+then mail it with
+$ mail -a sshd_config reimer@camosun.bc.ca
+
+Then removed the temporary copy!

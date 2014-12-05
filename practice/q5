@@ -1,0 +1,22 @@
+
+
+1. 'useradd fibbles'
+
+2. 'passwd fibbles'
+
+3. 'su fibbles'
+
+4. 'ssh-keygen'
+
+5. Disable by prepending "!" to the password in '/etc/shadow':
+
+    /etc/passwd:
+    fibbles:x:1004:1004::/home/fibbles:/bin/bash
+    
+    /etc/shadow:
+    fibbles:!$6$kbonnOKB$iLPZ2GfAOiOx0EUo3/FzN6bpMYeokYwPruwwJ2u/cljDHh8vMglNG19aGS3ZATnCcp9fU/DbibIZ1nJtDZUak/:16408:0:99999:7:::
+    
+    /home/fibbles/.ssh/id_rsa.pub:
+    ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDUvul6RO55rrs5psvakN0prKPL+qANy/y5j3ALY3R8aQeFibpyuR8Qt6xpFIKGnINiBLxoNSjSl/OvP3fZn0tOdCDN1eUJ/2MwhMn8syFhR26wweGqcu2EKaDzf2dYfYZb3CpzVirmtfL/fuh/LmicsK6xz509ex3VPnqd5jkqxviZUeKT6mD7EAIbRFKpzb7dfluDL7riK4+bFOadJ8dUTJ3qg/OoMBpQyQ5+2OXLuUgjlAV/b9H3bIgOJBX/EgCkNjsQSadNEjEwxTYC+IgisCZrUEKiFRQfQi0+qdkeEWUnBZhMg2I/mPzCMwI1YL5AQ2GXNfsqlNYZhb7Pise5 fibbles@comp270-46
+
+6. Mail does not bounce
